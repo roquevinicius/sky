@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SKY</title>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./node_modules/material-design-icons/iconfont/material-icons.css">
+        <!-- Estilo para pegar ícones específicos da SKY -->
+        <link rel="stylesheet" href="https://skyplay.sky.com.br/o/sky-play-theme/css/styles.css">
+        <!-- Estilo para customização -->
+        <link rel="stylesheet" href="./css/sky.css">
+        <!-- Estilo para carrossel de imagens -->
+        <link rel="stylesheet" href="./css/feature-carousel.css">
+        <!-- Estilo para slider -->
+        <link rel="stylesheet" href="./css/slider.css">
+        <!-- Estilo para accordion -->
+        <link rel="stylesheet" href="./css/accordion.css">
+    </head>
+    <body>
+        <!-- Barra de navegação de acessibilidade -->
+        <nav class="navbar navbar-expand bg-navbar-sky">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="32" viewBox="0 0 84 32">
+                        <defs>
+                            <path id="a" d="M.005 25.568v-.012l4.848-5.79c2.097 2.075 5.332 3.173 8.747 3.173 2.397 0 3.835-.915 3.894-2.136.06-2.074-3.474-2.379-6.71-3.293-3.655-1.038-7.549-3.539-6.53-8.786C5.02 4.76 8.46.144 17.146.004h.869c4.8.068 8.381 1.222 11.343 3.351l.478-2.501h8.87l-2.579 12.263L46.556.854h8.808l4.793 9.03 6.89-9.03h10.245L62.793 18.24l-2.157 10.86h-8.747l2.456-12.14L49.85 9.09l-5.871 6.528L51.889 29.1H41.343L35.17 17.875 33.072 29.1h-8.866l1.257-6.466c-2.397 5.551-6.89 7.382-13 7.382-5.15 0-9.88-1.584-12.458-4.448zM25.404 9.517c-3.775-2.135-6.291-2.622-8.988-2.622-1.497 0-3.175.365-3.415 1.83-.18 1.28 1.019 1.585 3.536 2.135 4.613.975 9.286 2.257 9.884 7.076L28.94 5.308l-3.535 4.209zm54.122-5.796h.799c.33 0 .538-.166.621-.498.081-.323-.03-.485-.336-.485h-.837l-.247.983zm-1.024 1.582l.785-3.127h1.518c.67 0 .923.324.76.971-.118.471-.341.753-.67.847.264.072.354.277.27.614l-.175.695h-.627l.145-.578c.074-.295-.034-.442-.325-.442h-.798l-.256 1.02h-.627zm2.256-3.946c-.622 0-1.212.235-1.77.704-.56.47-.922 1.038-1.09 1.704-.167.666-.09 1.235.233 1.706.323.471.795.707 1.416.707.622 0 1.21-.236 1.767-.707.557-.47.919-1.04 1.086-1.706.167-.663.09-1.23-.23-1.702-.32-.47-.79-.706-1.412-.706zm.1-.385c.73 0 1.284.273 1.666.818.38.546.475 1.205.281 1.975-.193.771-.618 1.43-1.274 1.977-.656.547-1.348.821-2.077.821-.736 0-1.296-.273-1.678-.819-.383-.546-.477-1.206-.283-1.979.194-.77.62-1.429 1.276-1.975.657-.545 1.353-.818 2.09-.818z"/>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+                            <mask id="b" fill="#fff">
+                                <use xlink:href="#a"/>
+                            </mask>
+                            <g fill="#F35C58" fill-rule="nonzero" mask="url(#b)">
+                                <path d="M0-.845h83v32H0z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <div class="d-flex justify-content-start w-50">
+                        <button type="button" class="border-0">
+                            <span class="material-icons text-secondary">accessibility_new</span>
+                        </button>
+                        <button type="button" class="border-0">
+                            <span class="sky_icon sky_icon-line-contrast text-secondary"></span>
+                        </button>
+                        <button type="button" class="border-0">
+                            <span class="sky_icon sky_icon-line-a-plus text-secondary"></span>
+                        </button>
+                        <button type="button" class="border-0">
+                            <span class="sky_icon sky_icon-line-a-minus text-secondary"></span>
+                        </button>
+                        <button type="button" class="ml-5 border-0 bg-transparent btn-retangular">
+                            <svg id="Layer_1" style="enable-background:new 0 0 512 512; width: 1.7rem; height: 1.7rem;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M144,124.9L353.8,256L144,387.1V124.9 M128,96v320l256-160L128,96L128,96z"/></g></svg>
+                            <span>Play</span>
+                        </button>
+                    </div>  
+                    <div class="d-flex justify-content-end w-50">
+                        <button type="button" class="ml-5 border-0 bg-transparent btn-retangular">
+                            <span class="sky_icon sky_icon-line-user text-secondary"></span>
+                            <span>Entrar</span>
+                        </button>
+                        <button type="button" class="border-0 bg-transparent btn-retangular">
+                            <span class="sky_icon sky_icon-line-magnifier text-secondary"></span>
+                        </button>
+                    </div>   
+                </div> 
+            </div>
+        </nav>
+        <header>
+            <nav class="nav shadow nav-pills nav-justified nav-secondary">
+                <a class="nav-item nav-link active" href="#">Filmes</a>
+                <a class="nav-item nav-link" href="#">Séries</a>
+                <a class="nav-item nav-link" href="#">Canais</a>
+            </nav>
+        </header>
+        
+        <div class="container-fluid">
+            <!-- Carrossel de imagens -->
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="carousel-container">
+                            <div id="carousel">
+                                <div class="carousel-feature">
+                                    <a href="#"><img class="carousel-image" alt="Image Caption" src="./img/carousel/sample1.jpg"></a>
+                                </div>
+                                <div class="carousel-feature">
+                                    <a href="#"><img class="carousel-image" alt="Image Caption" src="./img/carousel/sample2.jpg"></a>
+                                </div>
+                                <div class="carousel-feature">
+                                    <a href="#"><img class="carousel-image" alt="Image Caption" src="./img/carousel/sample3.jpg"></a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h6 class="ml-5">Os mais temidos</h6>
+                <div class="row mt-0 mb-5 mx-5">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-2.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-3.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h6 class="title-02 ml-5">Coletânia Nacional</h6>
+                <div class="row mb-5 mx-5">
+                    <div id="recipeCarousel_02" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-2.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-3.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel_02" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel_02" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h6 class="title-03 ml-5">DC Comics</h6>
+                <div class="row mt-0 mb-5 mx-5">
+                    <div id="recipeCarousel-03" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-2.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-3.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel-03" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel-03" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <h6 class="title-04 ml-5">Marvel</h6>
+                <div class="row mb-5 mx-5">
+                    <div id="recipeCarousel_04" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-2.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-3.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-1.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-4.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-5.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="movie-card m-1"> 
+                                    <div class="movie-img">
+                                        <a href="#"><img src="./img/slider/row1-6.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel_04" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel_04" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="logo"></div>
+                            </div>
+                            <div class="col-8 align-self-center">
+                                <a href="#" target="_blank" class="float-right mx-2">
+                                    <span class="sky_icon-line-social-instagram"></span>
+                                </a>
+                                <a href="#" target="_blank" class="float-right mx-2">
+                                    <span class="sky_icon-line-social-you-tube"></span>
+                                </a>
+                                <a href="#" target="_blank" class="float-right mx-2">
+                                    <span class="sky-icon-line-social-twitter"></span>
+                                </a>
+                                <a href="#" target="_blank" class="float-right mx-2">
+                                    <span class="sky_icon-line-social-facebook"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-md-6 col-12 ">
+                                <div class="app-sky ml-5">
+                                    <a href="#">
+                                        <img src="./img/80x80_IMG_SKY_LogoAppSKY_2.png" alt="" class="float-left">
+                                        <div class="text float-left ml-3 h-100">
+                                            <p>Baixe no seu celular o app Minha SKY e divirta-se.</p>                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row w-100 d-none d-sm-block">
+                                    <div class="col-12 mt-3">
+                                        <div class="app-stores">
+                                            <a href="#" class="app-apple-store d-inline-block"></a> 
+                                            <a href="#" class="app-google-play d-inline-block ml-xl-4 ml-md-0 mt-md-3"></a> 
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 d-none d-md-block">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="mb-5">
+                                            <li class="mb-2"><a href="#" class="link-title">Sobre</a></li>
+                                            <li><a href="#">Nossa história</a></li>
+                                            <li><a href="#">Imprensa</a></li>
+                                            <li><a href="#">Prêmios conquistados</a></li>
+                                            <li><a href="#">Credenciamento</a></li>
+                                            <li><a href="#">Trabalhe com a gente</a></li>
+                                            <li><a href="#">Promoção</a></li>
+                                        </ul> 
+                                        <ul>
+                                            <li class="mb-2"><a href="#" class="link-title">Ajuda</a></li>
+                                            <li><a href="#">Central de ajuda</a></li>
+                                            <li><a href="#">Manuais</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="mb-5">
+                                            <li class="mb-2"><a href="#" class="link-title">Nossas Responsabilidades</a></li>
+                                            <li><a href="#">Conselho aos usuários</a></li>
+                                            <li><a href="#">Pesquisa Anatel</a></li>
+                                            <li><a href="#">Relatórios de transparência</a></li>
+                                            <li><a href="#">Responsabilidade Social</a></li>
+                                            <li><a href="#">Acessibilidade</a></li>
+                                        </ul> 
+                                        <ul>
+                                            <li class="mb-2"><a href="#" class="link-title">SKY Empresas</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-block d-md-none pb-3">
+                                <!-- Accordion -->
+                                <div id="accordionExample" class="accordion mb-3">
+                                <!-- Accordion item 1 -->
+                                <div class="card border-bottom">
+                                    <div id="headingOne" class="card-header border-0">
+                                        <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Sobre</a></h6>
+                                    </div>
+                                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                                        <div class="card-body p-0">
+                                            <ul class="pl-4">
+                                                <li><a href="#">Nossa história</a></li>
+                                                <li><a href="#">Imprensa</a></li>
+                                                <li><a href="#">Prêmios conquistados</a></li>
+                                                <li><a href="#">Credenciamento</a></li>
+                                                <li><a href="#">Trabalhe com a gente</a></li>
+                                                <li><a href="#">Promoção</a></li>
+                                            </ul>         
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion item 2 -->
+                                <div class="card border-bottom">
+                                    <div id="headingTwo" class="card-header border-0">
+                                        <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Nossas Responsabilidades</a></h6>
+                                    </div>
+                                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-0">
+                                            <ul class="pl-4">
+                                                <li><a href="#">Conselho aos usuários</a></li>
+                                                <li><a href="#">Pesquisa Anatel</a></li>
+                                                <li><a href="#">Relatórios de transparência</a></li>
+                                                <li><a href="#">Responsabilidade Social</a></li>
+                                                <li><a href="#">Acessibilidade</a></li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion item 3 -->
+                                <div class="card border-bottom">
+                                    <div id="headingThree" class="card-header border-0">
+                                        <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Ajuda</a></h6>
+                                    </div>
+                                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                                        <div class="card-body p-0">
+                                            <ul class="pl-4">
+                                                <li><a href="#">Central de ajuda</a></li>
+                                                <li><a href="#">Manuais</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="ml-3 mb-3">SKY Empresas</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <nav class="navbar w-100">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">Início</a></li>|
+                            <li><a href="#">Política de Privacidade</a></li> |
+                            <li><a href="#">Contratos gerais</a></li> |
+                            <li><a href="#">Contratos Pré-pago</a></li> |
+                            <li><a href="#">Cancelamento</a></li> |
+                            <li><a href="#">Ouvidoria</a></li> |
+                            <li><a href="#">Consumidor.gov</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="footer">
+                    <div class="container">
+                       <p>® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade intelectual inserida nelas são de propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença.</p> 
+                    </div>
+                </section>
+            </footer>
+        </div>
+        
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/carousel/jquery-1.7.min.js"></script>
+        <script src="./js/carousel/jquery.featureCarousel.min.js"></script>
+        <script src="./js/slider/slider.js"></script>
+
+        <!-- Script para carrossel de imagens -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+              var carousel = $("#carousel").featureCarousel({
+                // include options like this:
+                // (use quotes only for string values, and no trailing comma after last option)
+                // option: value,
+                // option: value
+              });
+      
+              $("#but_prev").click(function () {
+                carousel.prev();
+              });
+              $("#but_pause").click(function () {
+                carousel.pause();
+              });
+              $("#but_start").click(function () {
+                carousel.start();
+              });
+              $("#but_next").click(function () {
+                carousel.next();
+              });
+            });
+          </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
+}
+.movie-img {
+    height:auto ;
+    width: auto;
+    overflow: hidden;
+	/* object-fit: fill; */
+}
+
+.carousel-control-next-icon {
+    width: 80px;
+    height: 160px;
+    background-image: url('../img/slider/btn-next.gif');
+    position: absolute;
+    right: -80px;
+    opacity: 1;
+}
+
+.carousel-control-next-icon:hover, .carousel-control-next-icon:focus , .carousel-control-next-icon:active{
+    background-image: url('../img/slider/btn-next-active.gif');
+}
+
+.carousel-control-prev-icon {
+    width: 80px;
+    height: 160px;
+    background-image: url('../img/slider/btn-prev.gif');
+    position: absolute;
+    left: -80px;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-prev-icon:focus , .carousel-control-prev-icon:active{
+    background-image: url('../img/slider/btn-prev-active.gif');
+}

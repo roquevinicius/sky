@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'SKY-Icon-Font';
+    src: url("../fonts/SKY-Icon-Font.eot");
+    src: url("../fonts/SKY-Icon-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/SKY-Icon-Font.woff") format("woff"), url("../fonts/SKY-Icon-Font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+html, body    {
+    color: #6c757d !important;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-navbar-sky {
+    background-color: #f1f2fa !important;
+    border-bottom: 2px solid #d4d4d9;
+}
+
+.navbar {
+    padding: 2.6rem 1rem;
+}
+
+.navbar-collapse button {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 3.125rem;
+    background-color: #ffffff;
+    left: -2px;
+    margin: 8px 8px;
+}  
+
+.navbar-collapse button .material-icons {
+    width: initial;
+    height: initial;
+    font-size: 1.3rem;
+    max-width: 1.7rem;
+    padding-top: 2px;
+    margin-left: -2px;
+}  
+
+.navbar-collapse button .sky_icon-line-contrast:active {
+    max-width: 1rem;
+}  
+
+.sky_icon {
+    font-family: 'SKY-Icon-Font' !important;
+}
+
+button:hover {
+    background-color: #e3e3eb !important;
+}
+
+button  {
+    color: #6c757d !important;
+}
+
+button:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+button.btn-retangular  {
+    width: auto;
+    border-radius: .2rem;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+button.btn-retangular span:last-child  {
+    font-weight: bold;
+}
+
+.sky_icon-line-contrast:before {
+    content: "\e91f";
+}
+
+.sky_icon-line-a-plus:before    {
+    content: "\e91e";
+}
+
+.sky_icon-line-a-minus:before    {
+    content: "\e91d";
+}
+
+.sky_icon-line-user:before   {
+    content: "\e920";
+}
+
+.sky_icon-line-magnifier:before {
+    content: "\e94c";
+}
+
+.nav-link   {
+    padding: 2rem 1rem;
+}
+
+.nav-pills .nav-link.active  {
+    background: #fff;
+    border-bottom: 8px solid #f35c58;
+    border-radius: 0; 
+    font-weight: 700;
+    color: #f35c58;
+}
+
+.nav-pills .nav-link  {
+    color: #6c757d;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #f1f2fa;
+    margin: 0 -15px;
+}
+
+footer a  {
+    color: #606064;
+}
+
+footer a:hover  {
+    color: #db524f;
+}
+
+footer ul   {
+    list-style: none;
+}
+
+footer ul li a.link-title  {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+footer ul li a.link-title:hover  {
+    color: #606064;
+}
+
+footer ul li a  {
+    font-weight: normal;
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+footer header   {
+    border-top: 1px solid #d9d9e0;
+    border-bottom: 1px solid #d9d9e0;
+}
+
+footer header .logo {
+    width: 168px;
+    height: 60px;
+    background: url('../img/sky-light-default.svg') no-repeat 50%;
+}
+
+.sky_icon-line-social-facebook, .sky-icon-line-social-twitter, .sky_icon-line-social-you-tube, .sky_icon-line-social-instagram {
+    font-family: 'SKY-Icon-Font' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #606064;
+    font-size: 1.5rem;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+}
+
+.sky_icon-line-social-facebook:hover, .sky-icon-line-social-twitter:hover, .sky_icon-line-social-you-tube:hover, .sky_icon-line-social-instagram:hover {
+    color: #db524f;
+}
+
+.sky_icon-line-social-facebook::before {
+    content: "\e910";
+}
+
+.sky-icon-line-social-twitter:before {
+    content: "\e912";
+}
+
+.sky_icon-line-social-you-tube:before {
+    content: "\e913";
+}
+
+.sky_icon-line-social-instagram:before {
+    content: "\e911";
+}
+
+footer section .app-sky img    {
+    height: 48px;
+}
+
+footer section .app-sky .text    {
+    width: 55%;
+    height: 48px;
+    color: #606064;
+    font-weight: bold;
+}
+
+footer .app-stores  {
+    margin-left: 112px;
+}
+
+footer a.app-apple-store {
+    background-image: url(../img/button-apple-store-light-default.svg);
+    width: 160px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: 160px 54px;
+}
+
+footer a.app-apple-store:hover {
+    background-image: url(../img/button-apple-store-light-over.svg);
+}
+
+footer a.app-google-play {
+    background-image: url(../img/button-google-play-light-default.svg);
+    width: 160px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: 160px 54px;
+}
+
+footer a.app-google-play:hover {
+    background-image: url(../img/button-google-play-light-over.svg);
+}
+
+footer .navbar  {
+    background-color: #fff;
+    padding: 10px 16px;
+}
+
+footer nav ul  {
+    margin-bottom: 0;
+}
+
+footer nav ul li    {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer section.footer   {
+    padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+    .collapse.navbar-collapse {
+      display: none !important;
+    }
+
+    .navbar-expand .navbar-toggler  {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+@media (max-width: 425px)   {
+    .app-sky p  {
+        color: #db5350;
+    }
+    
+    footer .navbar ul  {
+        padding-left: 0;
+    }
+
+    footer .container p {
+        text-align: center;
+    };
+}
